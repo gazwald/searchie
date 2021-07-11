@@ -1,0 +1,11 @@
+*.egg-info
+*.swp
+.cdk.staging
+.env
+.pytest_cache
+.venv
+__pycache__
+cdk.context.json
+cdk.out
+config.yml
+package-lock.json
