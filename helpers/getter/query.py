@@ -46,7 +46,7 @@ def make_request(
     result["{scheme]_status_code"] = r.status_code
     if r.ok:
         result[f"{scheme}_available"] = True
-        result["{scheme}_content"] = r.text
+        result[f"{scheme}_content"] = r.text
         result["headers"] = r.headers
         result["robots"] = get_robots_txt(f"{scheme}://{address}")
         result["last_online"] = datetime.now()
