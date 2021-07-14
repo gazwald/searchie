@@ -41,10 +41,14 @@ class PublicAddresses:
                 yield {
                     "_index": "ipv4addresses",
                     "address": str(address),
-                    "icmp_response": True,
-                    "http_response": True,
-                    "https_response": True,
-                    "whois": "",
+                    "http_available": True,
+                    "http_status_code": -1,
+                    "http_content": "",
+                    "https_available": True,
+                    "https_status_code": -1,
+                    "https_content": "",
+                    "headers": {},
+                    "robots": {},
                     "last_checked": datetime.now(),
                 }
 
